@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foodie Delight</title>
+    <link rel="stylesheet" href="bandengjuned.css">
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #2c3e50;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li {
+    margin-left: 30px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.hero {
+    background-image: url('begroon.png');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.cta-btn {
+    background-color: #e74c3c;
+    color: white;
+    padding: 12px 30px;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+.cta-btn:hover {
+    background-color: #c0392b;
+}
+
+.menu {
+    padding: 60px 20px;
+    background-color: #ecf0f1;
+    text-align: center;
+}
+
+.menu h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+.menu-items {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.menu-item {
+    background-color: white;
+    padding: 20px;
+    margin: 20px;
+    width: 280px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.menu-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.menu-item h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.menu-item p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.price {
+    font-size: 20px;
+    color: #e74c3c;
+    font-weight: bold;
+}
+
+.contact {
+    padding: 60px 20px;
+    background-color: #34495e;
+    color: white;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.contact form {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.contact input,
+.contact textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+}
+
+.contact button {
+    background-color: #e74c3c;
+    color: white;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+.contact button:hover {
+    background-color: #c0392b;
+}
+
+footer {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.whatsapp-btn {
+    margin-top: 20px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-container {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.location p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.map-container iframe {
+    border: 0;
+    border-radius: 8px;
+}
+.whatsapp-link {
+    display: flex;
+    align-items: center;
+    background-color: #25D366;
+    color: white;
+    padding: 12px 30px;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+    max-width: 250px;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.whatsapp-link img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.whatsapp-link:hover {
+    background-color: #128C7E;
+}
+
+    </style>
+    
+</head>
+
+<body>
+    
+    <header>
+        <div class="logo">Alfa Food</div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Selamat Datang di EL & AL Product</h1>
+            <p>Aneka Oleh-oleh khas semarang.</p>
+            <a href="#menu" class="cta-btn">Lihat Menu Kami</a>
+        </div>
+    </section>
+
+    <section id="menu" class="menu">
+        <h2>Menu Pilihan</h2>
+        <div class="menu-items">
+            <div class="menu-item">
+                <img src="lumpia.jpg" alt="Burger">
+                <h3>Lumpia</h3>
+                <p>Isi rebung dengan balutan daging ayam gurih</p>
+                <p class="price">Rp 15.000 </p>
+            </div>
+            <div class="menu-item">
+                <img src="bandeng.jpeg" alt="Pizza">
+                <h3>Bandeng Presto Yumm Yumm</h3>
+                <p>Bandeng presto duri lunak dan enak</p>
+                <p class="price">Rp 35.000</p>
+            </div>
+            <div class="menu-item">
+                <img src="wingko.avif" alt="Sushi">
+                <h3>Wingko Babat</h3>
+                <p>Berbagai macam varian rasa mulai dari original</p>
+                <p class="price">Rp 30.000</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Hubungi Kami</h2>
+        <form action="#" method="post">
+            <input type="text" placeholder="Nama" required>
+            <input type="email" placeholder="Email" required>
+            <textarea placeholder="Pesan" required></textarea>
+            <button type="submit">Kirim Pesan</button>
+        </form>
+    
+        <!-- Tombol WhatsApp -->
+        <div class="whatsapp-btn">
+            <a href="https://wa.me/6281234567890" target="_blank" class="whatsapp-link">
+                <img src="whatsapp-icon.png" alt="WhatsApp">
+                Chat di WhatsApp
+            </a>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-container">
+            <div class="location">
+                <h3>Lokasi Toko Kami</h3>
+                <p>Jalan Raya No. 123, Jakarta, Indonesia</p>
+                <div class="map-container">
+                    <!-- Ganti dengan iframe Google Maps untuk lokasi toko -->
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3950.212264560422!2d106.84607081415962!3d-6.208763895527755!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f3d53a1f5fdf%3A0xe0f334ea22d634d7!2sJl.%20Raya%20No.123%2C%20Jakarta!5e0!3m2!1sid!2sid!4v1619596769143!5m2!1sid!2sid"
+                        width="100%" height="300" frameborder="0" style="border:0;" allowfullscreen=""
+                        aria-hidden="false" tabindex="0"></iframe>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <footer>
+        <p>&copy; 2025 Alfa Food | Semua hak dilindungi</p>
+    </footer>
+</body>
+</html>
